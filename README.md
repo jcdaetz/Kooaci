@@ -7,4 +7,4 @@ Sitio web de Kooa — sitio estático (HTML + imágenes).
 
 Para verlo localmente, abre `index.html` en el navegador.
 
-Publicado con GitHub Pages en https://kooaci.com (ver archivo `CNAME`).
+Publicado en Vercel en https://kooaci.com.

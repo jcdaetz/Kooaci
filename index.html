@@ -27,7 +27,10 @@
       "description": "Evaluación e intervención neuropsicológica, psicología infantil y adolescente, tutorías académicas y orientación a padres en Ciudad de Guatemala. Atención presencial en Distrito Miraflores, zona 11, y virtual.",
       "url": "https://kooaci.com/",
       "logo": "https://kooaci.com/img/logo.jpg",
-      "image": ["https://kooaci.com/img/sala.jpg", "https://kooaci.com/img/consultorio.jpg"],
+      "image": [
+        "https://kooaci.com/img/sala.jpg",
+        "https://kooaci.com/img/consultorio.jpg"
+      ],
       "telephone": "+502 3026 6860",
       "email": "kooa.contacto@gmail.com",
       "address": {
@@ -37,20 +40,87 @@
         "addressRegion": "Guatemala",
         "addressCountry": "GT"
       },
-      "areaServed": { "@type": "Country", "name": "Guatemala" },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Guatemala"
+      },
       "availableLanguage": "es",
-      "audience": { "@type": "PeopleAudience", "audienceType": "Niños, adolescentes y sus familias" },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Niños, adolescentes y jóvenes de 3 a 24 años, y sus familias"
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Servicios",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Evaluación neuropsicológica", "description": "Evaluación integral para conocer las fortalezas y dificultades cognitivas, emocionales y académicas de niños y adolescentes." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intervención neuropsicológica", "description": "Fortalecimiento de atención, memoria, funciones ejecutivas y habilidades de aprendizaje mediante estrategias individualizadas." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Psicología infantil y adolescente", "description": "Acompañamiento emocional para desarrollar regulación emocional, autoestima, habilidades sociales y herramientas para afrontar diferentes situaciones." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tutorías académicas", "description": "Apoyo personalizado para reforzar contenidos, mejorar estrategias de estudio y favorecer un aprendizaje más autónomo." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orientación a padres", "description": "Estrategias y acompañamiento para comprender y responder de manera efectiva a las necesidades de sus hijos." } }
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Evaluación neuropsicológica",
+              "description": "Evaluación integral para conocer las fortalezas y dificultades cognitivas, emocionales y académicas de niños y adolescentes."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Intervención neuropsicológica",
+              "description": "Fortalecimiento de atención, memoria, funciones ejecutivas y habilidades de aprendizaje mediante estrategias individualizadas."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Psicología infantil y adolescente",
+              "description": "Acompañamiento emocional para desarrollar regulación emocional, autoestima, habilidades sociales y herramientas para afrontar diferentes situaciones."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tutorías académicas",
+              "description": "Apoyo personalizado para reforzar contenidos, mejorar estrategias de estudio y favorecer un aprendizaje más autónomo."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Orientación a padres",
+              "description": "Estrategias y acompañamiento para comprender y responder de manera efectiva a las necesidades de sus hijos."
+            }
+          }
         ]
-      }
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "19:00"
+        }
+      ],
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Parqueo dentro del edificio",
+          "value": true
+        }
+      ],
+      "founder": {
+        "@id": "https://kooaci.com/#paola"
+      },
+      "paymentAccepted": "Emite factura. No trabaja directamente con seguros médicos."
     },
     {
       "@type": "WebSite",
@@ -58,7 +128,164 @@
       "url": "https://kooaci.com/",
       "name": "Kooa",
       "inLanguage": "es",
-      "publisher": { "@id": "https://kooaci.com/#clinica" }
+      "publisher": {
+        "@id": "https://kooaci.com/#clinica"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://kooaci.com/#paola",
+      "name": "Paola Hernández",
+      "jobTitle": "Neuropsicóloga",
+      "description": "Licenciada en Psicología con Maestría en Neuropsicología Aplicada y posgrados en evaluación e intervención neuropsicológica. 7 años de experiencia en intervención de trastornos del neurodesarrollo.",
+      "worksFor": {
+        "@id": "https://kooaci.com/#clinica"
+      },
+      "image": "https://kooaci.com/img/paola.jpg",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Licenciatura en Psicología"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Maestría en Neuropsicología Aplicada"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "Posgrado en Evaluación Neuropsicológica"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "Posgrado en Intervención Neuropsicológica"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "license",
+          "name": "Colegiado activo No. 16467"
+        }
+      ],
+      "knowsAbout": [
+        "Neuropsicología infantil",
+        "Evaluación neuropsicológica",
+        "Intervención neuropsicológica",
+        "Trastornos del neurodesarrollo",
+        "Psicología infantil y adolescente"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kooaci.com/#preguntas",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es una evaluación neuropsicológica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es un proceso para conocer cómo piensa, aprende y se relaciona tu hijo. A través de entrevistas, pruebas estandarizadas y actividades, se evalúan áreas como atención, memoria, lenguaje, funciones ejecutivas, aprendizaje y aspectos emocionales. Al final recibes un informe con sus fortalezas, sus dificultades y recomendaciones concretas para casa y el colegio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo sé si mi hijo necesita una evaluación neuropsicológica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puede ser útil si notas que le cuesta concentrarse o recordar lo que aprende, si su rendimiento no refleja su esfuerzo, si recibes quejas constantes del colegio, si presenta problemas de conducta o si un docente o pediatra te lo ha sugerido. Si no estás seguro, escríbeme y lo conversamos antes de decidir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿A partir de qué edad atienden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atiendo niños, adolescentes y jóvenes desde los 3 hasta los 24 años. La orientación a padres está disponible para familias con hijos dentro de ese rango de edad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura una evaluación neuropsicológica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Varía según el motivo de consulta. Generalmente se realiza en 3 a 5 sesiones de 1 hora, más una entrevista inicial con los papás y una sesión de devolución de resultados. El informe escrito se entrega entre 10 y 15 días después de terminar la evaluación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre evaluación e intervención neuropsicológica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La evaluación sirve para entender qué está pasando: identifica fortalezas y dificultades. La intervención es el trabajo posterior, en sesiones periódicas, para fortalecer las habilidades que lo necesitan (atención, memoria, organización, estrategias de aprendizaje)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre psicología y neuropsicología?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La psicología infantil se enfoca en lo emocional y conductual: cómo se siente tu hijo, cómo maneja sus emociones y cómo se relaciona. La neuropsicología se enfoca en los procesos cognitivos, emocionales y de aprendizaje. Muchas veces ambas se complementan, y en Kooa podemos trabajarlas de forma integrada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Las tutorías son lo mismo que clases de refuerzo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No exactamente. Además de reforzar contenidos, las tutorías en Kooa trabajan estrategias de estudio y organización para que tu hijo aprenda de forma más autónoma, tomando en cuenta cómo aprende."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Atienden de forma virtual?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La psicología infantil y adolescente y la orientación a padres están disponibles en línea, al igual que algunas modalidades de tutoría e intervención. La evaluación neuropsicológica es presencial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde están ubicados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En el Edificio Distrito Miraflores, zona 11, Ciudad de Guatemala. El edificio cuenta con parqueo. Atendemos de lunes a sábado, de 8:00 a 19:00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa en la primera cita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La primera cita es una conversación con los papás, sin el niño, para entender qué están notando, conocer la historia de su hijo y definir juntos cuál es el mejor camino: evaluación, intervención, terapia, tutorías u orientación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajan con el colegio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. El colegio es un espacio fundamental en el desarrollo de niños y adolescentes, por eso es importante alinear estrategias e información. Según lo requiera cada caso, envío informes o encuestas, visito los centros educativos o realizo reuniones virtuales o presenciales, siempre con la autorización de la familia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta y cómo agendo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los costos dependen del servicio. Escríbeme por WhatsApp al +502 3026 6860 o a kooa.contacto@gmail.com y te comparto la información y los horarios disponibles. No trabajo directamente con seguros médicos, pero sí emito factura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pruebas se aplican en una evaluación neuropsicológica en Kooa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de cada caso: según el motivo de consulta se definen las áreas a evaluar y los instrumentos a utilizar. Entre las pruebas que se aplican en Kooa están: TONI-4 (inteligencia no verbal y razonamiento abstracto); ENI-2 (procesos neuropsicológicos, aprendizaje, atención, memoria y funciones ejecutivas); NEUROPSI Atención y Memoria (atención, concentración y memoria); BANFE (funciones ejecutivas y control cognitivo); BANETA (procesos de aprendizaje, lectura, escritura y matemáticas); SENA Padres (emociones, conducta y adaptación desde la perspectiva de los padres); SENA Escuela (funcionamiento emocional y conductual en el contexto escolar); SENA Autoinforme (estado emocional, conducta y relaciones desde la perspectiva del niño o adolescente); BRIEF-2 Padres (funciones ejecutivas en la vida cotidiana); BRIEF-2 Escuela (funciones ejecutivas en el contexto escolar); PAI Adultos (personalidad y características psicopatológicas en adultos); EXPLORA (dificultades y necesidades relacionadas con el aprendizaje); ABAS-II Padres (habilidades adaptativas en la vida cotidiana); ABAS-II Escuela (habilidades adaptativas en el contexto escolar); PEABODY (vocabulario receptivo y comprensión verbal); BOSTON (denominación y acceso al lenguaje); BEERY-BUKTENICA (integración visomotora y habilidades visuales); WISC-IV (capacidad intelectual y procesos cognitivos en niños y adolescentes); ADI-R (características del espectro autista mediante entrevista a cuidadores); E-TDAH (síntomas de atención, hiperactividad e impulsividad); BRIEF-P (funciones ejecutivas en niños pequeños); RIAS-2 (inteligencia general, verbal, no verbal y memoria); ATENTO (atención y control atencional)."
+          }
+        }
+      ]
     }
   ]
 }
@@ -143,12 +370,23 @@ section{scroll-margin-top:90px}
 .about .in{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
 .about img{width:100%;height:520px;object-fit:cover;border-radius:28px}
 .about p{font-size:17px;line-height:1.65;margin-bottom:16px}
+.about p.cred{font-size:15px;color:var(--mute);border-left:3px solid var(--p);padding-left:14px}
 .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 .tags span{background:#fff;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600}
 /* gallery */
 .gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:16px}
 .gal img{width:100%;height:100%;object-fit:cover;border-radius:22px}
 .gal img:first-child{grid-row:span 2}
+.faq{display:grid;gap:12px;max-width:900px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:0 22px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 28px 18px 0;font-weight:700;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:24px;color:var(--p)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{font-size:16px;line-height:1.65;color:var(--mute);padding-bottom:18px}
+.faq .tests{columns:2;column-gap:32px;font-size:15px;line-height:1.5;color:var(--mute);padding:0 0 18px 18px}
+.faq .tests li{break-inside:avoid;margin-bottom:8px}
+@media (max-width:820px){.faq .tests{columns:1}}
 /* footer */
 footer{background:var(--p);color:#fff;margin-top:88px}
 footer .in{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-top:64px;padding-bottom:64px}
@@ -209,6 +447,7 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
       <a href="#modalidades">Modalidades</a>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#espacio">El espacio</a>
+      <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <div style="display:flex;gap:10px;align-items:center">
@@ -230,7 +469,7 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
       </div>
     </div>
     <div class="hero-img">
-      <img src="img/paola.jpg" alt="Paola en el consultorio de Kooa">
+      <img src="img/paola.jpg" alt="Paola Hernández, neuropsicóloga, en el consultorio de Kooa">
       <div class="badge">
         <div><span class="dot" style="background:var(--f)"></span><strong>Presencial</strong>· Distrito Miraflores, z. 11</div>
         <div><span class="dot" style="background:var(--b)"></span><strong>Virtual</strong>· desde casa</div>
@@ -293,9 +532,10 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
       <img src="img/pizarra.jpg" alt="Pizarra: Qué valiente eres de hablar lo que sientes">
       <div>
         <span class="eyebrow" style="color:var(--p)">Sobre mí</span>
-        <h2 class="h2" style="margin:12px 0 20px">Hola, soy Paola.</h2>
+        <h2 class="h2" style="margin:12px 0 20px">Hola, soy Paola Hernández.</h2>
         <p>En Kooa brindo atención especializada en neuropsicología, psicología y acompañamiento académico para niños y adolescentes. Mi objetivo es comprender de manera integral a cada uno, brindándole herramientas que favorezcan su desarrollo cognitivo, emocional, social y académico, y acompañando a sus familias durante este proceso.</p>
         <p>Busco que cada niño y adolescente encuentre en Kooa un espacio seguro para comprender sus fortalezas y dificultades, desarrollar nuevas habilidades y desenvolverse con mayor autonomía y bienestar.</p>
+        <p class="cred">Licenciada en Psicología, con Maestría en Neuropsicología Aplicada y posgrados en Evaluación e Intervención Neuropsicológica. Colegiado activo No. 16467. Cuento con 7 años de experiencia en intervención de trastornos del neurodesarrollo y 4 años atendiendo en Kooa, en Distrito Miraflores.</p>
         <div class="tags"><span>Cercana</span><span>Individualizada</span><span>Con la familia</span></div>
       </div>
     </div>
@@ -313,6 +553,27 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
       </div>
     </div>
   </section>
+  <section id="preguntas" class="sec" style="padding-bottom:0">
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--b);margin-bottom:10px">Preguntas frecuentes</span>
+      <h2 class="h2" style="margin:8px 0 32px">Lo que más me preguntan los papás</h2>
+      <div class="faq">
+        <details><summary>¿Qué es una evaluación neuropsicológica?</summary><p>Es un proceso para conocer cómo piensa, aprende y se relaciona tu hijo. A través de entrevistas, pruebas estandarizadas y actividades, se evalúan áreas como atención, memoria, lenguaje, funciones ejecutivas, aprendizaje y aspectos emocionales. Al final recibes un informe con sus fortalezas, sus dificultades y recomendaciones concretas para casa y el colegio.</p></details>
+        <details><summary>¿Cómo sé si mi hijo necesita una evaluación neuropsicológica?</summary><p>Puede ser útil si notas que le cuesta concentrarse o recordar lo que aprende, si su rendimiento no refleja su esfuerzo, si recibes quejas constantes del colegio, si presenta problemas de conducta o si un docente o pediatra te lo ha sugerido. Si no estás seguro, escríbeme y lo conversamos antes de decidir.</p></details>
+        <details><summary>¿A partir de qué edad atienden?</summary><p>Atiendo niños, adolescentes y jóvenes desde los 3 hasta los 24 años. La orientación a padres está disponible para familias con hijos dentro de ese rango de edad.</p></details>
+        <details><summary>¿Cuánto dura una evaluación neuropsicológica?</summary><p>Varía según el motivo de consulta. Generalmente se realiza en 3 a 5 sesiones de 1 hora, más una entrevista inicial con los papás y una sesión de devolución de resultados. El informe escrito se entrega entre 10 y 15 días después de terminar la evaluación.</p></details>
+        <details><summary>¿Qué diferencia hay entre evaluación e intervención neuropsicológica?</summary><p>La evaluación sirve para entender qué está pasando: identifica fortalezas y dificultades. La intervención es el trabajo posterior, en sesiones periódicas, para fortalecer las habilidades que lo necesitan (atención, memoria, organización, estrategias de aprendizaje).</p></details>
+        <details><summary>¿Cuál es la diferencia entre psicología y neuropsicología?</summary><p>La psicología infantil se enfoca en lo emocional y conductual: cómo se siente tu hijo, cómo maneja sus emociones y cómo se relaciona. La neuropsicología se enfoca en los procesos cognitivos, emocionales y de aprendizaje. Muchas veces ambas se complementan, y en Kooa podemos trabajarlas de forma integrada.</p></details>
+        <details><summary>¿Las tutorías son lo mismo que clases de refuerzo?</summary><p>No exactamente. Además de reforzar contenidos, las tutorías en Kooa trabajan estrategias de estudio y organización para que tu hijo aprenda de forma más autónoma, tomando en cuenta cómo aprende.</p></details>
+        <details><summary>¿Atienden de forma virtual?</summary><p>Sí. La psicología infantil y adolescente y la orientación a padres están disponibles en línea, al igual que algunas modalidades de tutoría e intervención. La evaluación neuropsicológica es presencial.</p></details>
+        <details><summary>¿Dónde están ubicados?</summary><p>En el Edificio Distrito Miraflores, zona 11, Ciudad de Guatemala. El edificio cuenta con parqueo. Atendemos de lunes a sábado, de 8:00 a 19:00.</p></details>
+        <details><summary>¿Qué pasa en la primera cita?</summary><p>La primera cita es una conversación con los papás, sin el niño, para entender qué están notando, conocer la historia de su hijo y definir juntos cuál es el mejor camino: evaluación, intervención, terapia, tutorías u orientación.</p></details>
+        <details><summary>¿Trabajan con el colegio?</summary><p>Sí. El colegio es un espacio fundamental en el desarrollo de niños y adolescentes, por eso es importante alinear estrategias e información. Según lo requiera cada caso, envío informes o encuestas, visito los centros educativos o realizo reuniones virtuales o presenciales, siempre con la autorización de la familia.</p></details>
+        <details><summary>¿Cuánto cuesta y cómo agendo?</summary><p>Los costos dependen del servicio. Escríbeme por WhatsApp al +502 3026 6860 o a kooa.contacto@gmail.com y te comparto la información y los horarios disponibles. No trabajo directamente con seguros médicos, pero sí emito factura.</p></details>
+        <details><summary>¿Qué pruebas se aplican en una evaluación neuropsicológica en Kooa?</summary><p>Depende de cada caso: según el motivo de consulta se definen las áreas a evaluar y los instrumentos a utilizar. Entre las pruebas que se aplican en Kooa están:</p><ul class="tests"><li><strong>TONI-4</strong>: Inteligencia no verbal y razonamiento abstracto</li><li><strong>ENI-2</strong>: Procesos neuropsicológicos, aprendizaje, atención, memoria y funciones ejecutivas</li><li><strong>NEUROPSI Atención y Memoria</strong>: Atención, concentración y memoria</li><li><strong>BANFE</strong>: Funciones ejecutivas y control cognitivo</li><li><strong>BANETA</strong>: Procesos de aprendizaje, lectura, escritura y matemáticas</li><li><strong>SENA Padres</strong>: Emociones, conducta y adaptación desde la perspectiva de los padres</li><li><strong>SENA Escuela</strong>: Funcionamiento emocional y conductual en el contexto escolar</li><li><strong>SENA Autoinforme</strong>: Estado emocional, conducta y relaciones desde la perspectiva del niño o adolescente</li><li><strong>BRIEF-2 Padres</strong>: Funciones ejecutivas en la vida cotidiana</li><li><strong>BRIEF-2 Escuela</strong>: Funciones ejecutivas en el contexto escolar</li><li><strong>PAI Adultos</strong>: Personalidad y características psicopatológicas en adultos</li><li><strong>EXPLORA</strong>: Dificultades y necesidades relacionadas con el aprendizaje</li><li><strong>ABAS-II Padres</strong>: Habilidades adaptativas en la vida cotidiana</li><li><strong>ABAS-II Escuela</strong>: Habilidades adaptativas en el contexto escolar</li><li><strong>PEABODY</strong>: Vocabulario receptivo y comprensión verbal</li><li><strong>BOSTON</strong>: Denominación y acceso al lenguaje</li><li><strong>BEERY-BUKTENICA</strong>: Integración visomotora y habilidades visuales</li><li><strong>WISC-IV</strong>: Capacidad intelectual y procesos cognitivos en niños y adolescentes</li><li><strong>ADI-R</strong>: Características del espectro autista mediante entrevista a cuidadores</li><li><strong>E-TDAH</strong>: Síntomas de atención, hiperactividad e impulsividad</li><li><strong>BRIEF-P</strong>: Funciones ejecutivas en niños pequeños</li><li><strong>RIAS-2</strong>: Inteligencia general, verbal, no verbal y memoria</li><li><strong>ATENTO</strong>: Atención y control atencional</li></ul></details>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer id="contacto">
@@ -321,7 +582,7 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
       <h2>Demos el primer paso juntos.</h2>
       <a class="btn btn-y wa" href="#" target="_blank" rel="noopener">Agendar por WhatsApp</a>
     </div>
-    <div class="col"><strong>Dirección</strong>Edificio Distrito Miraflores<br>Zona 11, Ciudad de Guatemala</div>
+    <div class="col"><strong>Dirección</strong>Edificio Distrito Miraflores<br>Zona 11, Ciudad de Guatemala<br>Parqueo en el edificio<br><br><strong>Horario</strong>Lunes a sábado, 8:00 a 19:00</div>
     <div class="col"><strong>Contacto</strong><a class="wa" href="#" target="_blank" rel="noopener" id="phoneTxt">+502 3026 6860</a><br><a href="mailto:kooa.contacto@gmail.com">kooa.contacto@gmail.com</a></div>
   </div>
   <div class="wrap legal">© <span id="yr"></span> Kooa · Crecimiento integral</div>

@@ -313,10 +313,10 @@ p{margin:0;text-wrap:pretty}
 /* header */
 header{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .hd{display:flex;align-items:center;justify-content:space-between;height:84px}
-.logo{width:64px;height:64px;overflow:hidden;border-radius:12px}
+.logo{width:64px;height:64px;overflow:hidden;border-radius:12px;flex:none}
 .logo img{width:100%;height:100%;object-fit:cover;transform:scale(1.6);mix-blend-mode:multiply}
 nav.main{display:flex;gap:32px;font-size:15px;font-weight:500}
-nav.main a{color:var(--ink);text-decoration:none}nav.main a:hover{color:var(--p)}
+nav.main a{color:var(--ink);text-decoration:none;white-space:nowrap}nav.main a:hover{color:var(--p)}
 .menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--lav);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:4px}
 .menu-btn span{width:18px;height:2px;background:var(--p)}
 /* hero */
@@ -373,6 +373,27 @@ section{scroll-margin-top:90px}
 .about p.cred{font-size:15px;color:var(--mute);border-left:3px solid var(--p);padding-left:14px}
 .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 .tags span{background:#fff;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600}
+/* testimonials */
+.tsts{background:#fff}
+.tst-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.tst{margin:0;position:relative;background:var(--bg);border-radius:28px;padding:40px 36px 32px;display:flex;flex-direction:column;gap:18px;overflow:hidden}
+.tst::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--c)}
+.tst::after{content:"“";position:absolute;top:-18px;right:22px;font:800 180px/1 'Baloo 2',sans-serif;color:var(--c);opacity:.16;pointer-events:none}
+.tst-svc{color:var(--ink);padding-right:84px;position:relative;z-index:1}
+.tst blockquote{margin:0;display:flex;flex-direction:column;gap:16px}
+.tst-q{font:700 clamp(22px,2vw,27px)/1.2 'Baloo 2',sans-serif;color:var(--p);text-wrap:balance}
+.tst-body p{font-size:16px;line-height:1.65;color:#4a3a4f}
+.tst-body p+p,.tst-body details p{margin-top:12px}
+.tst details summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:700;font-size:15px;color:var(--p)}
+.tst details summary::-webkit-details-marker{display:none}
+.tst details summary::after{content:"+";font-size:20px;line-height:1}
+.tst details[open] summary::after{content:"–"}
+.tst details .less,.tst details[open] .more{display:none}
+.tst details[open] .less{display:inline}
+.tst figcaption{margin-top:auto;display:flex;align-items:center;gap:12px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
+.tst figcaption strong{display:block;font-size:16px;color:var(--ink)}
+.tst-av{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--c);color:#fff;font:800 38px/1 'Baloo 2',sans-serif;padding-top:16px;box-sizing:border-box}
+@media (max-width:820px){.tst-grid{grid-template-columns:1fr}.tst{padding:34px 24px 26px}.tst::after{font-size:130px;top:-12px;right:14px}.tst-svc{padding-right:64px}}
 /* gallery */
 .gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:16px}
 .gal img{width:100%;height:100%;object-fit:cover;border-radius:22px}
@@ -398,6 +419,13 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
 /* floating WhatsApp (mobile) */
 .fab{display:none}
 /* responsive */
+@media (max-width:1180px){nav.main{gap:20px;font-size:14px}.hd .btn{white-space:nowrap}}
+@media (max-width:1000px){
+  nav.main{display:none;position:absolute;top:84px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 20px 20px;border-bottom:1px solid var(--line)}
+  nav.main.open{display:flex}
+  nav.main a{padding:14px 0;border-bottom:1px solid var(--line);font-size:17px}
+  .menu-btn{display:flex}
+}
 @media (max-width:1024px){
   .finder{grid-template-columns:1fr}
   .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -446,6 +474,7 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
       <a href="#servicios">Servicios</a>
       <a href="#modalidades">Modalidades</a>
       <a href="#sobre-mi">Sobre mí</a>
+      <a href="#testimonios">Testimonios</a>
       <a href="#espacio">El espacio</a>
       <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
@@ -537,6 +566,64 @@ footer a{color:#fff}footer a:hover{color:var(--y)}
         <p>Busco que cada niño, adolescente y joven encuentre en Kooa un espacio seguro para comprender sus fortalezas y dificultades, desarrollar nuevas habilidades y desenvolverse con mayor autonomía y bienestar.</p>
         <p class="cred">Licenciada en Psicología, con Maestría en Neuropsicología Aplicada y posgrados en Evaluación e Intervención Neuropsicológica. Colegiado activo No. 16467. Cuento con 7 años de experiencia en intervención de trastornos del neurodesarrollo y 4 años atendiendo en Kooa, en Distrito Miraflores.</p>
         <div class="tags"><span>Cercana</span><span>Individualizada</span><span>Con la familia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="sec tsts">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow" style="color:var(--f)">Testimonios</span>
+          <h2 class="h2" style="margin-top:12px">Lo que viven las familias</h2>
+        </div>
+        <p>Pedí a una familia de cada servicio que me contara cómo había sido su proceso. Estas son sus palabras.</p>
+      </div>
+      <div class="tst-grid">
+        <figure class="tst" style="--c:var(--p)">
+          <span class="eyebrow tst-svc"><span class="dot" style="background:var(--p)"></span>Evaluación neuropsicológica</span>
+          <blockquote>
+            <p class="tst-q">Un diagnóstico no cambia quién es nuestro hijo. Lo que sí puede cambiar es nuestra manera de acompañarlo.</p>
+            <div class="tst-body">
+              <p>Llegamos a la evaluación con la sensación de que, aunque estábamos haciendo todo lo posible, necesitábamos comprender mejor las necesidades de nuestro hijo para poder apoyarlo de la mejor manera, tanto en su presente como pensando en su futuro.</p>
+              <details><summary><span class="more">Leer testimonio completo</span><span class="less">Mostrar menos</span></summary><p>La evaluación nos dio respuestas profesionales a las inquietudes que observábamos en su comportamiento y, sobre todo, nos brindó calma. Tener un camino trazado y saber cómo transitarlo paso a paso nos permitió entender que la evaluación también es una forma de apoyarlo.</p><p>Es un proceso que puede generar miedo, incertidumbre, tristeza y ansiedad, especialmente cuando se recibe un diagnóstico. Sin embargo, comprendimos que un diagnóstico no cambia quién es nuestro hijo. Lo que sí puede cambiar es nuestra manera de acompañarlo: tener más calma, saber qué esperar, qué necesita y cómo podemos apoyarlo. Para nosotros, como padres, también fue importante sentir que estamos haciendo lo mejor posible.</p></details>
+            </div>
+          </blockquote>
+          <figcaption><span class="tst-av" aria-hidden="true">“</span><span><strong>Mamá y papá</strong>Evaluación neuropsicológica</span></figcaption>
+        </figure>
+        <figure class="tst" style="--c:var(--f)">
+          <span class="eyebrow tst-svc"><span class="dot" style="background:var(--f)"></span>Psicología infantil y adolescente</span>
+          <blockquote>
+            <p class="tst-q">Saber que ahora cuenta con herramientas que puede utilizar por sí mismo ha sido una de las partes más bonitas de todo el proceso.</p>
+            <div class="tst-body">
+              <p>Llegamos a terapia porque el colegio nos indicó que nuestro hijo necesitaba comenzar un proceso terapéutico. Como papá, sentía que muchas veces no estaban comprendiendo lo que él necesitaba y que detrás de algunas de sus conductas había emociones que no sabía cómo expresar.</p>
+              <details><summary><span class="more">Leer testimonio completo</span><span class="less">Mostrar menos</span></summary><p>Durante la terapia aprendió a reconocer y comprender mejor sus emociones, expresarlas de una manera adecuada y encontrar formas de manejarlas. También logró disminuir su resistencia ante las normas y desarrollar mejores habilidades para relacionarse con los demás.</p><p>Con el tiempo fuimos viendo cambios que para nosotros fueron muy significativos. Aprendió a utilizar las herramientas por sí mismo y a desenvolverse de una manera más independiente. Actualmente ya no necesita continuar en terapia. Como papá, poder verlo llegar a este punto y saber que ahora cuenta con herramientas que puede utilizar por sí mismo ha sido una de las partes más bonitas de todo el proceso.</p></details>
+            </div>
+          </blockquote>
+          <figcaption><span class="tst-av" aria-hidden="true">“</span><span><strong>Papá</strong>Psicología infantil y adolescente</span></figcaption>
+        </figure>
+        <figure class="tst" style="--c:var(--b)">
+          <span class="eyebrow tst-svc"><span class="dot" style="background:var(--b)"></span>Orientación a padres</span>
+          <blockquote>
+            <p class="tst-q">Hemos logrado hacer cosas que antes yo veía como imposibles.</p>
+            <div class="tst-body">
+              <p>Cuando comenzamos las asesorías, muchas situaciones del día a día me sobrepasaban. Sentía que no sabía cómo organizarme ni cómo manejar algunas situaciones con mi hija, y muchas veces no sabía qué hacer o por dónde empezar.</p>
+              <details><summary><span class="more">Leer testimonio completo</span><span class="less">Mostrar menos</span></summary><p>Las herramientas que he aprendido en las asesorías me han ayudado muchísimo. No solo he aprendido a comprender mejor a mi hija, sino también a sentirme más segura y preparada para acompañarla.</p><p>He visto cambios en ella y, sobre todo, hemos logrado hacer cosas que antes yo veía como imposibles. Para mí ha sido muy importante darme cuenta de que sí podemos avanzar, que no tengo que tener todas las respuestas y que contar con las herramientas adecuadas puede hacer una gran diferencia.</p></details>
+            </div>
+          </blockquote>
+          <figcaption><span class="tst-av" aria-hidden="true">“</span><span><strong>Mamá</strong>Orientación a padres</span></figcaption>
+        </figure>
+        <figure class="tst" style="--c:var(--y)">
+          <span class="eyebrow tst-svc"><span class="dot" style="background:var(--y)"></span>Tutorías académicas</span>
+          <blockquote>
+            <p class="tst-q">Notamos una mejora en sus notas y mayor seguridad al momento de responder los exámenes.</p>
+            <div class="tst-body">
+              <p>Decidimos comenzar con las tutorías para que Inés mejorara su rendimiento en matemáticas y fortaleciera la comprensión de conceptos importantes para la materia.</p>
+              <details><summary><span class="more">Leer testimonio completo</span><span class="less">Mostrar menos</span></summary><p>Notamos una mejora en sus notas y mayor seguridad al momento de responder los exámenes. También comenzó a realizar sus tareas con mayor facilidad y en menos tiempo.</p><p>Recomendamos este tipo de acompañamiento porque permite apoyar al alumno de manera gradual y atender las dificultades de aprendizaje desde el inicio. Identificar y trabajar una dificultad a tiempo puede ayudar a prevenir mayores dificultades tanto en el ámbito académico como personal.</p></details>
+            </div>
+          </blockquote>
+          <figcaption><span class="tst-av" aria-hidden="true">“</span><span><strong>Familia de Inés</strong>Tutorías académicas</span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
